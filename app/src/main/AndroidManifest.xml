@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.splashm">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="El universo en tus manos"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SplashM">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Fenomenos"></activity>
+        <activity android:name=".Nebulosas"></activity>
+        <activity android:name=".Constelaciones"></activity>
+        <activity android:name=".Galaxia"></activity>
+        <activity android:name=".Splash3"></activity>
+        <activity android:name=".Splash2">
+
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>

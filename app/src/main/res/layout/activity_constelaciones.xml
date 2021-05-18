@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Constelaciones"
+    android:background="@drawable/fondo2"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Constelaciones"
+        android:textColor="#F3E8E8"
+        android:textSize="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/txtQuees"
+        android:layout_width="382dp"
+        android:layout_height="136dp"
+        android:fontFamily="casual"
+        android:justificationMode="inter_word"
+        android:text="Las constelaciones son grupos de estrellas que evocan la figura de un animal, un ser mitológico o algún objeto inanimado. Una división habitual de las constelaciones consiste en dividirlas en dos grupos: las constelaciones septentrionales y las constelaciones australes. Las constelaciones septentrionales son las que pueden observarse desde el hemisferio norte mientras que las constelaciones australes pertenecen al hemisferio sur."
+        android:textColor="#F3E8E8"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+
+    <RadioGroup
+        android:layout_width="339dp"
+        android:layout_height="139dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.422">
+
+        <RadioButton
+            android:id="@+id/rbtnHsur"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Hemisferio Sur"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rbtnHnorte"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Hemisferio norte"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnValidar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#65508A"
+            app:cornerRadius="12dp"
+            android:text="Buscar  razon" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnMapaConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#453B3B"
+        android:text="Mapa de constelaciones"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/agujero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgvMostrar"
+        android:layout_width="271dp"
+        android:layout_height="246dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.841"
+        android:background="@drawable/constelaciones"
+         />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
